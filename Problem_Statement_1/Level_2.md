@@ -68,27 +68,31 @@ neighbor_col = (c + dc + C) % C
 <summary><strong>🧪 Feature 1 — Test Case 1: Blinker on Grid Border</strong></summary>
 <br>
 
-*A horizontal blinker split across the right and left edges seamlessly connects and oscillates.*
+*A vertical blinker split across the top and bottom edges seamlessly connects and oscillates to a horizontal blinker wrapping across the left and right edges.*
 
 **Input:**
 ```
 toroidal
-3 3
+5 5
 1
-#.#
-...
-...
+#....
+#....
+.....
+.....
+#....
 ```
 
 **Output:**
 ```
 Mode: Toroidal
-Initial Population: 2
+Initial Population: 3
 Final Population: 3
 Final Grid:
-#..
-#..
-#..
+##..#
+.....
+.....
+.....
+.....
 ```
 </details>
 
@@ -113,7 +117,7 @@ toroidal
 ```
 Mode: Toroidal
 Initial Population: 5
-Final Population: 5
+Final Population: 4
 Final Grid:
 #...
 .#.#
@@ -308,7 +312,7 @@ metrics
 ```
 Live Cells: 5
 Bounding Box: 3 x 3 (Rows 0-2, Cols 0-2)
-Center of Mass: (1.40, 1.00)
+Center of Mass: (1.40, 1.20)
 ```
 </details>
 
