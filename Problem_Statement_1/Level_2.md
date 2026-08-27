@@ -290,7 +290,7 @@ Final Population: 3
 For a given grid with $N$ live cells located at coordinates $(r_1, c_1), (r_2, c_2), \dots, (r_N, c_N)$:
 - **Bounding Box:** $H = (r_{max} - r_{min} + 1)$, $W = (c_{max} - c_{min} + 1)$
 - **Center of Mass:** $(\bar{r}, \bar{c}) = \left(\frac{\sum r_i}{N}, \frac{\sum c_i}{N}\right)$ rounded to 2 decimal places.
-- If $N = 0$, print `No live cells`.
+- If $N = 0$, print `Live Cells: 0`, `Bounding Box: 0 x 0`, and `Center of Mass: N/A` (see Test Case 2 below).
 
 <details>
 <summary><strong>🧪 Test Case 1: Glider Metrics</strong></summary>
